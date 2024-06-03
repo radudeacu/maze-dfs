@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.maze {
+    display: grid;
+    grid-template-rows: repeat(15, 30px);
+    grid-template-columns: repeat(15, 30px);
+    gap: 2px;
+}
+
+
+.cell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.wall {
+    background-color: #333;
+}
+
+.path {
+    background-color: #fff;
+}
+
+.visited {
+    background-color: teal;
+}
+
+.solution {
+    background-color: yellow;
+}
